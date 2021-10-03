@@ -30,8 +30,15 @@ $(function(){
         fade:true,
         arrows: false,
     });
-    
+
+    /* menu-nav *****************************************************************************/
+    $(".openbtn1").click(function () {
+        $(this).toggleClass('active');
+    });
     /**modal *******************************************************************/ 
- 
+    $(".openbtn1").click(function(){
+        $(".menu-nav").toggleClass('open-modal');
+        $(".openbtn1").toggleClass('openbtn1-color');
+    })
 
 });
